@@ -91,3 +91,24 @@ struct WorldClockView: View {
 #Preview {
     LandingView()
 }
+
+struct ExtractedView: View {
+    var body: some View {
+        HStack{
+            //left side
+            VStack {
+                Text("today, +0HRS")
+                Text("Ottawa")
+                    .font(.system(.largeTitle, design: .default, weight: . thin))
+            }
+            
+            Spacer()
+            
+            Text("6:35")
+                .font(.system(size:64.0, weight:.thin, design:.default))
+            Text("AM")
+                .font(.system(.largeTitle, design:.default, weight:.thin))
+        }
+        
+    }
+}
